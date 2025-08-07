@@ -14,6 +14,7 @@ sendBtn.addEventListener('click', () => {
     text.type = "checkbox"
     text.className = "w-[50px] h-[50px]"
     label.textContent = input.value + "" + "#" + son
+    input.value = ``
     container.prepend(text, label)
     body.prepend(container)
     let xax = document.querySelector('#xax')
@@ -30,6 +31,7 @@ sendBtn.addEventListener('click', () => {
         label.classList.add("text-white")
     })
 })
+
 
 
 
